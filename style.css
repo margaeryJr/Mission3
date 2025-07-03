@@ -1,5 +1,139 @@
-/* style.css */
-.hero {
-  background-image: url('bg-hero.png');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+}
+
+.logo span {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 14px;
+  color: #bbb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #555;
+  background: #111;
+  color: white;
+  outline: none;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.password-field .toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.links a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.links strong {
+  color: white;
+}
+
+.login-btn {
+  background: #444;
+  color: white;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.or {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #aaa;
+}
+
+.google-btn {
+  background: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 999px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 18px;
 }
