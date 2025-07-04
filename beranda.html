@@ -4,22 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHILL - Beranda</title>
-  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header class="main-header">
-    <div class="logo">🎬 CHILL</div>
-    <nav class="nav-links">
-      <a href="#">Series</a>
-      <a href="#">Film</a>
-      <a href="#">Daftar Saya</a>
-    </nav>
-    <div class="profile-avatar">
-      <img src="" alt="Profile" />
+<header class="main-header">
+  <div class="logo">🎬 CHILL</div>
+
+  <nav class="nav-links">
+    <a href="#">Series</a>
+    <a href="#">Film</a>
+    <a href="#">Daftar Saya</a>
+  </nav>
+
+  <!-- Avatar + Dropdown -->
+  <div class="profile-wrapper">
+    <input type="checkbox" id="profile-toggle" hidden />
+    <label for="profile-toggle" class="profile-avatar">
+      <img src="profile.png" alt="Avatar" />
+    </label>
+
+    <div class="dropdown-menu">
+      <a href="#">👤 Profil Saya</a>
+      <a href="#">⭐ Ubah Premium</a>
+      <a href="#">🚪 Keluar</a>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Main Content -->
   <main>
@@ -42,10 +54,10 @@
     <section class="film-section">
       <h2>Melanjutkan Tonton Film</h2>
       <div class="film-carousel">
-        <img src="https://via.placeholder.com/140x200" alt="Film 1">
-        <img src="https://via.placeholder.com/140x200" alt="Film 2">
-        <img src="https://via.placeholder.com/140x200" alt="Film 3">
-        <img src="https://via.placeholder.com/140x200" alt="Film 4">
+        <img src="bluelock.jpeg" alt="Blue Lock">
+        <img src="mermaid.png" alt="My Little Mermaid">
+        <img src="otto.jpg" alt="A Man Called Otto">
+        <img src="jurassic.png" alt="Jurassic World">
       </div>
     </section>
 
@@ -53,10 +65,10 @@
     <section class="film-section">
       <h2>Top Rating Film dan Series Hari ini</h2>
       <div class="film-carousel">
-        <img src="https://via.placeholder.com/140x200" alt="Top 1">
-        <img src="https://via.placeholder.com/140x200" alt="Top 2">
-        <img src="https://via.placeholder.com/140x200" alt="Top 3">
-        <img src="https://via.placeholder.com/140x200" alt="Top 4">
+        <img src="antman.png" alt="Antman">
+        <img src="suzume.png" alt="Suzume No Tojimari">
+        <img src="dlp.png" alt="Don't Look Up">
+        <img src="zombie.png" alt="All Of Us Are Dead">
       </div>
     </section>
 
@@ -64,10 +76,11 @@
     <section class="film-section">
       <h2>Film Trending</h2>
       <div class="film-carousel">
-        <img src="https://via.placeholder.com/140x200" alt="Trend 1">
-        <img src="https://via.placeholder.com/140x200" alt="Trend 2">
-        <img src="https://via.placeholder.com/140x200" alt="Trend 3">
-        <img src="https://via.placeholder.com/140x200" alt="Trend 4">
+        <img src="frieren2.jpg" alt="Frieren">
+        <img src="bighero6.png" alt="Big Hero 6">
+        <img src="mermaid.png" alt="My Little Mermaid">
+        <img src="jurassic.png" alt="Jurassic World">
+        <img src="suzume.png" alt="Suzume No Tojimari">
       </div>
     </section>
 
@@ -75,10 +88,11 @@
     <section class="film-section">
       <h2>Rilis Baru</h2>
       <div class="film-carousel">
-        <img src="https://via.placeholder.com/140x200" alt="New 1">
-        <img src="https://via.placeholder.com/140x200" alt="New 2">
-        <img src="https://via.placeholder.com/140x200" alt="New 3">
-        <img src="https://via.placeholder.com/140x200" alt="New 4">
+        <img src="suzume.png" alt="Suzume No Tojimari">
+        <img src="bighero6.png" alt="Big Hero 6">
+        <img src="antman.png" alt="Antman">
+        <img src="frieren2.jpg" alt="Frieren">
+        <img src="sonic.png" alt="Sonic The Hedgehog">
       </div>
     </section>
 
