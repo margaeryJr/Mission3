@@ -9,37 +9,38 @@
 <body>
 
   <!-- Header -->
-<header class="main-header">
-  <div class="logo">🎬 CHILL</div>
-
-  <nav class="nav-links">
-    <a href="#">Series</a>
-    <a href="#">Film</a>
-    <a href="#">Daftar Saya</a>
-  </nav>
-
-  <!-- Avatar + Dropdown -->
-  <div class="profile-wrapper">
-    <input type="checkbox" id="profile-toggle" hidden />
-    <label for="profile-toggle" class="profile-avatar">
-      <img src="profile.png" alt="Avatar" />
-    </label>
-
-    <div class="dropdown-menu">
-      <a href="#">👤 Profil Saya</a>
-      <a href="#">⭐ Ubah Premium</a>
-      <a href="#">🚪 Keluar</a>
+  <header class="main-header">
+    <div class="nav-logo">
+      <img src="img/logo.png">
     </div>
-  </div>
-</header>
+
+    <nav class="nav-links">
+      <a href="#series">Series</a>
+      <a href="#film">Film</a>
+      <a href="#mylist">My List</a>
+    </nav>
+
+    <!-- Avatar + Dropdown -->
+    <div class="profile-wrapper">
+      <input type="checkbox" id="profile-toggle" hidden />
+      <label for="profile-toggle" class="profile-avatar">
+        <img src="img/profile.png" alt="Avatar" />
+      </label>
+
+      <div class="dropdown-menu">
+        <a href="#">👤 Profil Saya</a>
+        <a href="#">⭐ Ubah Premium</a>
+        <a href="#">🚪 Keluar</a>
+      </div>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <main>
-
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Frieren : Beyond Journey's End</h1>
+        <h1>Frieren: Beyond Journey's End</h1>
         <p>Berkisah tentang Frieren si penyihir elf, mantan anggota kelompok petualang yang mengalahkan Demon King dan mengembalikan kedamaian di dunia setelah 10 tahun berpetualang.</p>
         <div class="hero-buttons">
           <button class="btn-main">▶ Mulai</button>
@@ -54,10 +55,10 @@
     <section class="film-section">
       <h2>Melanjutkan Tonton Film</h2>
       <div class="film-carousel">
-        <img src="bluelock.jpeg" alt="Blue Lock">
-        <img src="mermaid.png" alt="My Little Mermaid">
-        <img src="otto.jpg" alt="A Man Called Otto">
-        <img src="jurassic.png" alt="Jurassic World">
+        <img src="./img/bluelock.jpeg" alt="Blue Lock">
+        <img src="./img/mermaid.png" alt="My Little Mermaid">
+        <img src="./img/frieren2.jpg" alt="A Man Called Otto">
+        <img src="./img/jurassic.png" alt="Jurassic World">
       </div>
     </section>
 
@@ -65,10 +66,10 @@
     <section class="film-section">
       <h2>Top Rating Film dan Series Hari ini</h2>
       <div class="film-carousel">
-        <img src="antman.png" alt="Antman">
-        <img src="suzume.png" alt="Suzume No Tojimari">
-        <img src="dlp.png" alt="Don't Look Up">
-        <img src="zombie.png" alt="All Of Us Are Dead">
+        <img src="./img/antman.png" alt="Antman">
+        <img src="./img/suzume.png" alt="Suzume No Tojimari">
+        <img src="./img/dlp.png" alt="Don't Look Up">
+        <img src="./img/zombie.png" alt="All Of Us Are Dead">
       </div>
     </section>
 
@@ -76,11 +77,11 @@
     <section class="film-section">
       <h2>Film Trending</h2>
       <div class="film-carousel">
-        <img src="frieren2.jpg" alt="Frieren">
-        <img src="bighero6.png" alt="Big Hero 6">
-        <img src="mermaid.png" alt="My Little Mermaid">
-        <img src="jurassic.png" alt="Jurassic World">
-        <img src="suzume.png" alt="Suzume No Tojimari">
+        <img src="./img/frieren2.jpg" alt="Frieren">
+        <img src="./img/bighero6.png" alt="Big Hero 6">
+        <img src="./img/mermaid.png" alt="My Little Mermaid">
+        <img src="./img/jurassic.png" alt="Jurassic World">
+        <img src="./img/suzume.png" alt="Suzume No Tojimari">
       </div>
     </section>
 
@@ -88,39 +89,46 @@
     <section class="film-section">
       <h2>Rilis Baru</h2>
       <div class="film-carousel">
-        <img src="suzume.png" alt="Suzume No Tojimari">
-        <img src="bighero6.png" alt="Big Hero 6">
-        <img src="antman.png" alt="Antman">
-        <img src="frieren2.jpg" alt="Frieren">
-        <img src="sonic.png" alt="Sonic The Hedgehog">
+        <img src="./img/suzume.png" alt="Suzume No Tojimari">
+        <img src="./img/bighero6.png" alt="Big Hero 6">
+        <img src="./img/antman.png" alt="Antman">
+        <img src="./img/frieren2.jpg" alt="Frieren">
+        <img src="./img/sonic.png" alt="Sonic The Hedgehog">
       </div>
     </section>
-
   </main>
 
   <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-container">
-    <div class="footer-logo">🎬 CHILL</div>
+      <div class="logo">
+        <img src="./img/logo.png" alt="CHILL Logo">
+      </div>
 
-    <div class="footer-columns">
-      <div>
-        <h4>Genre</h4>
-        <ul>
-          <li>Aksi</li><li>Drama</li><li>Komedi</li><li>Fantasi</li><li>Sains</li><li>Romantis</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Bantuan</h4>
-        <ul>
-          <li>FAQ</li><li>Kontak Kami</li><li>Privasi</li><li>Syarat & Ketentuan</li>
-        </ul>
-         
+      <div class="footer-columns">
+        <div>
+          <h4>Genre</h4>
+          <ul>
+            <li>Aksi</li>
+            <li>Drama</li>
+            <li>Komedi</li>
+            <li>Fantasi</li>
+            <li>Sains</li>
+            <li>Romantis</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bantuan</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Kontak Kami</li>
+            <li>Privasi</li>
+            <li>Syarat & Ketentuan</li>
+          </ul>
+        </div>
       </div>
     </div>
-    </div>
-   <p><center>&copy; 2025 Chill All Rights Reserved.</center></p>
+    <p>&copy; 2025 Chill All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
