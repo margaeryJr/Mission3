@@ -4,38 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHILL - Beranda</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="beranda.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
   <!-- Header -->
   <header class="main-header">
-    <div class="nav-logo">
-      <img src="img/logo.png">
+    <div class="header-left">
+      <div class="nav-logo">
+        <img src="img/logo.png" alt="CHILL Logo">
+      </div>
+
+      <nav class="nav-links">
+        <a href="#series">Series</a>
+        <a href="#film">Film</a>
+        <a href="#mylist">My List</a>
+      </nav>
     </div>
-
-    <nav class="nav-links">
-      <a href="#series">Series</a>
-      <a href="#film">Film</a>
-      <a href="#mylist">My List</a>
-    </nav>
-
+    
     <!-- Avatar + Dropdown -->
     <div class="profile-wrapper">
       <input type="checkbox" id="profile-toggle" hidden />
       <label for="profile-toggle" class="profile-avatar">
-        <img src="img/profile.png" alt="Avatar" />
+        <img src="img/profile.png" alt="Profile Avatar">
       </label>
 
       <div class="dropdown-menu">
-        <a href="#">👤 Profil Saya</a>
-        <a href="#">⭐ Ubah Premium</a>
-        <a href="#">🚪 Keluar</a>
+        <a href="#"><i class="fas fa-user"></i> Profil Saya</a>
+        <a href="#"><i class="fas fa-crown"></i> Ubah Premium</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Keluar</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -43,15 +44,17 @@
         <h1>Frieren: Beyond Journey's End</h1>
         <p>Berkisah tentang Frieren si penyihir elf, mantan anggota kelompok petualang yang mengalahkan Demon King dan mengembalikan kedamaian di dunia setelah 10 tahun berpetualang.</p>
         <div class="hero-buttons">
-          <button class="btn-main">▶ Mulai</button>
-          <button class="btn-secondary">ℹ Selengkapnya</button>
+          <button class="btn-main"><i class="fas fa-play"></i> Mulai</button>
+          <button class="btn-secondary"><i class="fas fa-info-circle"></i> Selengkapnya</button>
           <span class="label-18">18+</span>
         </div>
       </div>
-      <div class="volume-control">🔊</div>
+      <button class="volume-control" aria-label="Volume control">
+        <i class="fas fa-volume-up"></i>
+      </button>
     </section>
 
-    <!-- Melanjutkan Tonton -->
+    <!-- Film Sections -->
     <section class="film-section">
       <h2>Melanjutkan Tonton Film</h2>
       <div class="film-carousel">
@@ -62,7 +65,6 @@
       </div>
     </section>
 
-    <!-- Top Rating -->
     <section class="film-section">
       <h2>Top Rating Film dan Series Hari ini</h2>
       <div class="film-carousel">
@@ -73,7 +75,6 @@
       </div>
     </section>
 
-    <!-- Film Trending -->
     <section class="film-section">
       <h2>Film Trending</h2>
       <div class="film-carousel">
@@ -85,7 +86,6 @@
       </div>
     </section>
 
-    <!-- Rilis Baru -->
     <section class="film-section">
       <h2>Rilis Baru</h2>
       <div class="film-carousel">
@@ -101,12 +101,12 @@
   <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-container">
-      <div class="logo">
+      <div class="footer-logo">
         <img src="./img/logo.png" alt="CHILL Logo">
       </div>
 
       <div class="footer-columns">
-        <div>
+        <div class="footer-column">
           <h4>Genre</h4>
           <ul>
             <li>Aksi</li>
@@ -117,7 +117,7 @@
             <li>Romantis</li>
           </ul>
         </div>
-        <div>
+        <div class="footer-column">
           <h4>Bantuan</h4>
           <ul>
             <li>FAQ</li>
@@ -128,7 +128,9 @@
         </div>
       </div>
     </div>
-    <p>&copy; 2025 Chill All Rights Reserved.</p>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Chill All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
