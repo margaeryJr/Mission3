@@ -231,16 +231,23 @@ body {
   display: flex;
   gap: 10px;
   padding-bottom: 15px;
-  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .film-continue img {
-   flex: 1;
   border-radius: 8px;
-  height: 160px;
+  width: 302px;
+  height: 162px;
   object-fit: cover;
   transition: transform 0.3s ease;
   cursor: pointer;
+  flex-shrink: 0;
+}
+
+.film-continue::-webkit-scrollbar {
+  display: none;
 }
 
 .film-continue img:hover {
@@ -251,16 +258,23 @@ body {
   display: flex;
   gap: 10px;
   padding-bottom: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .film-carousel img {
-  flex: 1;
   border-radius: 8px;
   width: 234px;
   height: 365px;
   object-fit: cover;
   transition: transform 0.3s ease;
   cursor: pointer;
+  flex-shrink: 0;
+}
+
+.film-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .film-carousel img:hover {
